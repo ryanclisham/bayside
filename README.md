@@ -1,1 +1,1 @@
-# bayside
+# responsive-grid-template
