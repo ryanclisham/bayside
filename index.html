@@ -21,21 +21,16 @@
 
       <div id="name">
         <h1>Bayside Burgers & Grill</h1>
-        <a href="https://www.accuweather.com/en/us/new-york-ny/10007/weather-forecast/349727" class="aw-widget-legal">
-        </a><div id="awcc1519314782752" class="aw-widget-current"  data-locationkey="" data-unit="f" data-language="en-us"
-        data-useip="true" data-uid="awcc1519314782752"></div><script type="text/javascript"
-        src="https://oap.accuweather.com/launch.js">
-        </script>
-      </div>
+        <h3>Est. Wait Time: 4 Mins</h3>
     </header>
 
     <main>
       <div id="carousel">
         <div class="owl-carousel owl-theme">
           <div><img src="Img/Restaurant_view.jpg" alt="Restaurant"></div>
-          <div><img src="Img/Crazy_cali_cod.jpg" alt="Dummy image"></div>
-          <div><img src="Img/Lazy_lobster.jpg" alt="Dummy image"></div>
-          <div><img src="Img/Myrtle_man.jpg" alt="Dummy image"></div>
+          <div><img src="Img/Crazy_cali_cod.jpg" alt="Cod"></div>
+          <div><img src="Img/Lazy_lobster.jpg" alt="Lobster With Dipping Sauce"></div>
+          <div><img src="Img/Myrtle_man.jpg" alt="Hot Wings And Celery"></div>
         </div>
       </div>
 
@@ -46,7 +41,7 @@
 
       <div id="reserve">
         <h2><b>Reserve A Table!</b></h2>
-        <form action="thanks.html" method="post">
+        <form id="form" action="thanks.html" method="get">
         <label for="name">Party Name: </label>
         <input id="name" type="text" name="Name">
         <br>
@@ -112,7 +107,7 @@
         <h2>Connect With Us!</h2>
         <a href="https://www.instagram.com/baysidemyrtle"><img src="Img/Insta.png" width="50" height="50"></a>
         <a href="https://www.twitter.com/baysidemyrtle"><img src="Img/Twitter.png" width="50" height="50"></a>
-        <a href="https://www.facebook.com/Baysidemyrtle"><img src="Img/Facebook.png" width="50" height="50"></a>
+        <a href="https://www.fb.me/Baysidemyrtle"><img src="Img/Facebook.png" width="50" height="50"></a>
       </div>
 
     </footer>
@@ -121,6 +116,15 @@
 
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+
+  <script>
+var form = document.getElementById("form")
+form.on('submit', function(e){
+  e.preventDefault()
+  console.log("Hey")
+})
+</script>
 
 
   <script src="js/owl.carousel.min.js"></script>
