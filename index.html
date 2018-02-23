@@ -29,7 +29,7 @@
         <div class="owl-carousel owl-theme">
           <div><img src="Img/Restaurant_view.jpg" alt="Restaurant"></div>
           <div><img src="Img/Crazy_cali_cod.jpg" alt="Cod"></div>
-          <div><img src="Img/Lazy_lobster.jpg" alt="Lobster With Dipping Sauce"></div>
+          <div><img src="Img/Burger_fries.jpg" alt="Lobster With Dipping Sauce"></div>
           <div><img src="Img/Myrtle_man.jpg" alt="Hot Wings And Celery"></div>
         </div>
       </div>
@@ -41,7 +41,7 @@
 
       <div id="reserve">
         <h2><b>Reserve A Table!</b></h2>
-        <form id="form" action="thanks.html">
+        <form id="form" action="thanks.html" method="get">
         <label for="name">Party Name: </label>
         <input id="name" type="text" name="Name" required>
         <br>
@@ -51,14 +51,19 @@
          <br>
 
          <label for="number">Phone Number: </label>
-         <input id="telNo" type="tel">
+         <input id="phone" type="text" name="phone#" size="1">
+         -
+         <input id="phone" type="text" name="phone#" size="5">
          <br>
 
          <label for="time">Arrival Time: </label>
-         <input name="time" type="text" size="3" required>
-         <select id="day" name="day">
-           <option value="AM">AM</option>
-           <option value="PM">PM</option>
+         <select id="time" name="time">
+           <option value="12">12 - 1 PM</option>
+           <option value="1">1 - 2 PM</option>
+           <option value="2">2 - 3 PM</option>
+           <option value="3">3 - 4 PM</option>
+           <option value="4">4 - 5 PM</option>
+           <option value="5">5 - 6 PM</option>
          </select>
          <br>
 
@@ -134,7 +139,7 @@ form.on('submit', function(e){
           autoplay: true,
           autoplayTimeout: 3750,
           autoplayHoverPause: true,
-          dots: true,
+          dots: false,
           items: 1,
           loop: true,
           margin: 10,
