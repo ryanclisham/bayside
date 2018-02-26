@@ -184,6 +184,7 @@ h6 {
 
 p {
   font-family: 'Kavivanar', cursive;
+  text-align: center;
 }
 
 ol {
@@ -200,7 +201,15 @@ li {
 
 /* tables */
 form {
-  padding: 4px  
+  padding: 4px;
+}
+
+input {
+  margin: 2px;
+}
+
+select {
+  margin: 2px;
 }
 
 table {
