@@ -125,6 +125,7 @@ div#name {
 }
 
 div#carousel {
+  border: 2px solid blue;
   grid-area: carousel;
   overflow: hidden;
 }
@@ -225,11 +226,13 @@ tr {
 }
 
 th {
+  font-family: 'Saira Condensed', sans-serif;
+  text-align: center;
   padding: 5px;
 }
 
 td {
-
+  padding: 5px;
 }
 
 /* images */
