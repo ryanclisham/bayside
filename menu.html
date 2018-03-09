@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Bayside Bar And Grill</title>
+  <link rel="icon" href="Img/Bayside_logo.png" type="image/png">
+  <link href="css/main.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Saira+Condensed" rel="stylesheet">
+  <link href="css/owl.carousel.min.css" rel="stylesheet">
+  <link href="css/owl.theme.default.min.css" rel="stylesheet">
+</head>
+
+<body background="Img/Beach.jpg">
+
+  <div class="container">
+
+    <header>
+      <div id="logo"><a href="https://ryanclisham.github.io/bayside"><img src="Img/Bayside_logo.png"></a></div>
+
+      <div id="name">
+        <h1>Bayside Bar & Grill</h1>
+        <blink><b>Est. Wait Time: 4 Mins</b></blink>
+      </div>
+
+    </header>
+
+    <main>
+      <div id="carousel">
+        <div class="owl-carousel owl-theme">
+          <div><img src="Img/Restaurant_view.jpg" alt="Restaurant"></div>
+          <div><img src="Img/Crazy_cali_cod.jpg" alt="Cod"></div>
+          <div><img src="Img/Burger_fries.jpg" alt="Burger And Fries"></div>
+          <div><img src="Img/Myrtle_man.jpg" alt="Hot Wings And Celery"></div>
+        </div>
+      </div>
+
+      <div id="menu">
+        <h2>The Menu</h2>
+        <p><a href="The_menu.pdf" download><img src="Img/Menu_pic.png" width="250" height="50"></a></p>
+        <a href="ryanclisham.github.io/bayside/menu.html">Or Click Here For The Full Screen Menu</a>
+      </div>
+
+      <div id="reserve">
+        <h2><b>Reserve A Table!</b></h2>
+        <form id="form" action="thanks.html" method="get">
+        <label for="name">Name: </label>
+        <input id="name" type="text" placeholder="last name" name="Name" required>
+        <br>
+
+         <label for="email">Email: </label>
+         <input name="email" type="text" placeholder="someone@mail.com" name="email address" required>
+         <br>
+
+         <label for="number">Number: </label>
+         <input id="phone" type="text" name="phone#" size="1">
+         -
+         <input id="phone" type="text" name="phone#" size="4">
+         <br>
+
+         <label for="time">Arrival Time: </label>
+         <select id="time" name="time">
+           <option value="12">12 - 1 PM</option>
+           <option value="1">1 - 2 PM</option>
+           <option value="2">2 - 3 PM</option>
+           <option value="3">3 - 4 PM</option>
+           <option value="4">4 - 5 PM</option>
+           <option value="5">5 - 6 PM</option>
+           <option value="6">7 - 8 PM</option>
+           <option value="7">9 - 10 PM</option>
+         </select>
+         <br>
+
+           <label for="party">Number Of People: </label>
+         <select id="people" name="People">
+           <option value="1">1</option>
+           <option value="2">2</option>
+           <option value="3">3</option>
+           <option value="4">4</option>
+           <option value="5">5</option>
+           <option value="6">6</option>
+           <option value="7">7</option>
+           <option value="8">8</option>
+           <option value="9">9</option>
+           <option value="10">10</option>
+           <option value="11">11</option>
+           <option value="12">12</option>
+         </select>
+         <br>
+
+         <input type="submit" value="Reserve My Table">
+
+      </form>
+      </div>
+    </main>
+
+    <footer>
+      <div id="location">
+        <h2>Location</h2>
+        <p><b>Address:</b> 229 N Ocean Blvd</p>
+        <p>North Myrtle Beach, SC 29572</p>
+        <a href="tel:843-229-7433"><img src="Img/Call.png" width="250" height="100"></a>
+        <table align="center">
+          <tr>
+            <th>Hours Of Operation</th>
+          </tr>
+          <tr>
+            <td><p>Sunday - Saturday:  8 AM - 10 PM</p></td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3314.722335581771!2d-78.67121368517195!3d33.81947788066981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89007d4545411ea3%3A0x96295da238bf232!2s229+N+Ocean+Blvd%2C+North+Myrtle+Beach%2C+SC+29582!5e0!3m2!1sen!2sus!4v1518450272139"
+        width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+
+      <div id="credits">
+        <h2>Credits</h2>
+        <p>Website Made By: Ryan C.</p>
+      </div>
+
+      <div id="social">
+        <h2>Connect With Us!</h2>
+        <a href="https://www.instagram.com/baysidemyrtle"><img src="Img/Insta.png" width="50" height="50"></a>
+        <a href="https://www.twitter.com/baysidemyrtle"><img src="Img/Twitter.png" width="50" height="50"></a>
+        <a href="https://www.fb.me/Baysidemyrtle"><img src="Img/Facebook.png" width="50" height="50"></a>
+        <p>*Click on each social media icon to go to the following page*</p>
+      </div>
+
+    </footer>
+
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+
+  <script>
+var form = document.getElementById("form")
+form.on('submit', function(e){
+  e.preventDefault()
+  console.log("Hey")
+})
+
+</script>
+
+
+  <script src="js/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.owl-carousel').owlCarousel({
+          autoplay: true,
+          autoplayTimeout: 3750,
+          autoplayHoverPause: true,
+          dots: false,
+          items: 1,
+          loop: true,
+          margin: 10,
+          nav: false,
+      })
+    });
+  </script>
+
+</body>
+</html>
